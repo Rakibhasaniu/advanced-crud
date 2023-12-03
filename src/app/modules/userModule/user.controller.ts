@@ -8,6 +8,10 @@ import { UserService } from "./user.service";
 const createUser =async (req: Request, res: Response) => {
     try{
         const data = req.body
+        console.log(data)
+        // if (isNaN(data.userId)) {
+        //     throw new Error('Invalid userId. Please provide a valid number.');
+        // }
         const result = await UserService.createUsertIntoDB(data);
         res.status(200).json({
             success: true,
