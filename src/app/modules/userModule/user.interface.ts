@@ -1,4 +1,4 @@
-import { Schema, model, connect } from 'mongoose';
+// import { Schema, model } from 'mongoose';
 
 export type IFullname = {
     firstName: string;
@@ -18,5 +18,5 @@ export type IUser = {
     email:string;
     isActive: boolean;
     hobbies:string[];
-    address:
+    address: IAddress;
 }
